@@ -1,8 +1,8 @@
 {
     "mouseover": [
         {
-            "selector": ".title a",
-            "text": ["要看看 {text} 么？"]
+            "selector": ".stylesheet",
+            "text": ["要看看这个空白的网站么？"]
         },
         {
             "selector": ".searchbox",
