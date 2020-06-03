@@ -1,7 +1,7 @@
 {
     "mouseover": [
         {
-            "selector": "landlord",
+            "selector": ".landlord",
             "text": ["要看看这个空白的网站么？"]
         },
         {
