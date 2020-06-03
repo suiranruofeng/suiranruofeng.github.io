@@ -1,11 +1,11 @@
 {
     "mouseover": [
         {
-            "selector": ".landlord",
+            "selector": "#landlord",
             "text": ["要看看这个空白的网站么？"]
         },
         {
-            "selector": ".searchbox",
+            "selector": "#searchbox",
             "text": ["在找什么东西呢，需要帮忙吗？"]
         }
     ],
