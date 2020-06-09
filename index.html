@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- 声明当前页面的编码集：charset=gbk,gb2312(中文编码) , utf-8(国际编码) -->
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <!-- 声明当前页面的三元素 -->
+        <title>莫名其妙的网站</title>
+        <meta name='keywords' content='关键词,关键词'>
+        <meta name='description' content=''>
+        <link rel="stylesheet" href="/live2d/css/live2d.css" />
+        <!-- js/css -->
+ 
+    </head>
+<body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="hide-button">隐藏</div>
+    </div>
+    <script type="text/javascript">
+        var message_Path = '/live2d/'
+        var home_Path = 'https://suiranruofeng.github.io/'  //此处修改为你的域名，必须带斜杠
+    </script>
+    <script type="text/javascript" src="/live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="/live2d/js/message.js"></script>
+    <script type="text/javascript">
+        loadlive2d("live2d", "/live2d/model/tia/model.json");
+    </script>
+ </body>
+</html>
