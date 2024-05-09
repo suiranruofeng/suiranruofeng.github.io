@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Test | De finibus bonorum et malorum</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="第一章 Q1:恒星为什么有自行？ 恒星本身在宇宙中的运动。
+Q2:自行和径向速度的关系? 自行是垂直于视线方向的运动，径向运动是沿着视线方向的运动。
+Q3:单位为什么不一样? ⾃⾏通过恒星⾚经和⾚纬的变化来测量。通常以⻆秒/年（$arcsec/yr$）或毫⻆秒/年（$milli-arcsec/yr$）为单位 ⽽径向速度通过多普勒频移来测量，通常以$km/s$为单位
+Q4:怎样将自行变成和径向速度相同的单位？ 需要通过获得恒星距离$D$来获得切向速度$V_T=\mu D$此时与径向速度量纲一致，假设$D$的单位是$km$ 由于$1\ arcsec=\frac{1}{3600}deg=\frac{2\pi}{360*3600}rad,\ 1yr=3.15\times10^7s$因此只需调整为原本数值的$\frac{2\pi}{360*3600*3.15\times10^7}$ 倍。
+第二章 运用Gaia计算恒星距离 $\epsilon\ CRT$ star (HD 99167)，视差为8.177988986211076$mag$
+def plx2d(parallex): AU = 0.000004848 PI = parallex/1000*0.0000048 d = AU/PI dly = d*3.2 return d, dly parallex = 8.177988986211076 d, dly = plx2d(parallex) print(&#34;%s pc %s ly&#34; % (d, dly)) output: 123.50224507552687 $pc$ 395.20718424168604 $ly$
+第三章 已知太阳的绝对星等为$M_v=&#43;4.83$，求太阳的视星等(V段)。 已知视星等和绝对星等的关系为 $$M_v-m_v=-5log(d)&#43;5$$ 将$M_v=&#43;4.83$，日地距离$d=4.8*10^{-6}pc$ 带入得 $$m_v=-26.76$$ import math M_v = 4.83 def cal(M_v): d = 0.">
+    <meta name="generator" content="Hugo 0.125.6">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/test/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/test/">
+  <meta property="og:site_name" content="De finibus bonorum et malorum">
+  <meta property="og:title" content="Test">
+  <meta property="og:description" content="第一章 Q1:恒星为什么有自行？ 恒星本身在宇宙中的运动。
+Q2:自行和径向速度的关系? 自行是垂直于视线方向的运动，径向运动是沿着视线方向的运动。
+Q3:单位为什么不一样? ⾃⾏通过恒星⾚经和⾚纬的变化来测量。通常以⻆秒/年（$arcsec/yr$）或毫⻆秒/年（$milli-arcsec/yr$）为单位 ⽽径向速度通过多普勒频移来测量，通常以$km/s$为单位
+Q4:怎样将自行变成和径向速度相同的单位？ 需要通过获得恒星距离$D$来获得切向速度$V_T=\mu D$此时与径向速度量纲一致，假设$D$的单位是$km$ 由于$1\ arcsec=\frac{1}{3600}deg=\frac{2\pi}{360*3600}rad,\ 1yr=3.15\times10^7s$因此只需调整为原本数值的$\frac{2\pi}{360*3600*3.15\times10^7}$ 倍。
+第二章 运用Gaia计算恒星距离 $\epsilon\ CRT$ star (HD 99167)，视差为8.177988986211076$mag$
+def plx2d(parallex): AU = 0.000004848 PI = parallex/1000*0.0000048 d = AU/PI dly = d*3.2 return d, dly parallex = 8.177988986211076 d, dly = plx2d(parallex) print(&#34;%s pc %s ly&#34; % (d, dly)) output: 123.50224507552687 $pc$ 395.20718424168604 $ly$
+第三章 已知太阳的绝对星等为$M_v=&#43;4.83$，求太阳的视星等(V段)。 已知视星等和绝对星等的关系为 $$M_v-m_v=-5log(d)&#43;5$$ 将$M_v=&#43;4.83$，日地距离$d=4.8*10^{-6}pc$ 带入得 $$m_v=-26.76$$ import math M_v = 4.83 def cal(M_v): d = 0.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-21T10:43:52+08:00">
+    <meta property="article:modified_time" content="2024-03-21T10:43:52+08:00">
+
+  <meta itemprop="name" content="Test">
+  <meta itemprop="description" content="第一章 Q1:恒星为什么有自行？ 恒星本身在宇宙中的运动。
+Q2:自行和径向速度的关系? 自行是垂直于视线方向的运动，径向运动是沿着视线方向的运动。
+Q3:单位为什么不一样? ⾃⾏通过恒星⾚经和⾚纬的变化来测量。通常以⻆秒/年（$arcsec/yr$）或毫⻆秒/年（$milli-arcsec/yr$）为单位 ⽽径向速度通过多普勒频移来测量，通常以$km/s$为单位
+Q4:怎样将自行变成和径向速度相同的单位？ 需要通过获得恒星距离$D$来获得切向速度$V_T=\mu D$此时与径向速度量纲一致，假设$D$的单位是$km$ 由于$1\ arcsec=\frac{1}{3600}deg=\frac{2\pi}{360*3600}rad,\ 1yr=3.15\times10^7s$因此只需调整为原本数值的$\frac{2\pi}{360*3600*3.15\times10^7}$ 倍。
+第二章 运用Gaia计算恒星距离 $\epsilon\ CRT$ star (HD 99167)，视差为8.177988986211076$mag$
+def plx2d(parallex): AU = 0.000004848 PI = parallex/1000*0.0000048 d = AU/PI dly = d*3.2 return d, dly parallex = 8.177988986211076 d, dly = plx2d(parallex) print(&#34;%s pc %s ly&#34; % (d, dly)) output: 123.50224507552687 $pc$ 395.20718424168604 $ly$
+第三章 已知太阳的绝对星等为$M_v=&#43;4.83$，求太阳的视星等(V段)。 已知视星等和绝对星等的关系为 $$M_v-m_v=-5log(d)&#43;5$$ 将$M_v=&#43;4.83$，日地距离$d=4.8*10^{-6}pc$ 带入得 $$m_v=-26.76$$ import math M_v = 4.83 def cal(M_v): d = 0.">
+  <meta itemprop="datePublished" content="2024-03-21T10:43:52+08:00">
+  <meta itemprop="dateModified" content="2024-03-21T10:43:52+08:00">
+  <meta itemprop="wordCount" content="87"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Test">
+<meta name="twitter:description" content="第一章 Q1:恒星为什么有自行？ 恒星本身在宇宙中的运动。
+Q2:自行和径向速度的关系? 自行是垂直于视线方向的运动，径向运动是沿着视线方向的运动。
+Q3:单位为什么不一样? ⾃⾏通过恒星⾚经和⾚纬的变化来测量。通常以⻆秒/年（$arcsec/yr$）或毫⻆秒/年（$milli-arcsec/yr$）为单位 ⽽径向速度通过多普勒频移来测量，通常以$km/s$为单位
+Q4:怎样将自行变成和径向速度相同的单位？ 需要通过获得恒星距离$D$来获得切向速度$V_T=\mu D$此时与径向速度量纲一致，假设$D$的单位是$km$ 由于$1\ arcsec=\frac{1}{3600}deg=\frac{2\pi}{360*3600}rad,\ 1yr=3.15\times10^7s$因此只需调整为原本数值的$\frac{2\pi}{360*3600*3.15\times10^7}$ 倍。
+第二章 运用Gaia计算恒星距离 $\epsilon\ CRT$ star (HD 99167)，视差为8.177988986211076$mag$
+def plx2d(parallex): AU = 0.000004848 PI = parallex/1000*0.0000048 d = AU/PI dly = d*3.2 return d, dly parallex = 8.177988986211076 d, dly = plx2d(parallex) print(&#34;%s pc %s ly&#34; % (d, dly)) output: 123.50224507552687 $pc$ 395.20718424168604 $ly$
+第三章 已知太阳的绝对星等为$M_v=&#43;4.83$，求太阳的视星等(V段)。 已知视星等和绝对星等的关系为 $$M_v-m_v=-5log(d)&#43;5$$ 将$M_v=&#43;4.83$，日地距离$d=4.8*10^{-6}pc$ 带入得 $$m_v=-26.76$$ import math M_v = 4.83 def cal(M_v): d = 0.">
+
+	
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+
+
+
+  
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        De finibus bonorum et malorum
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Test</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-03-21T10:43:52+08:00">March 21, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h4 id="第一章">第一章</h4>
+<h5 id="q1恒星为什么有自行">Q1:恒星为什么有自行？</h5>
+<p>恒星本身在宇宙中的运动。</p>
+<h5 id="q2自行和径向速度的关系">Q2:自行和径向速度的关系?</h5>
+<p>自行是垂直于视线方向的运动，径向运动是沿着视线方向的运动。</p>
+<h5 id="q3单位为什么不一样">Q3:单位为什么不一样?</h5>
+<p>⾃⾏通过恒星⾚经和⾚纬的变化来测量。通常以⻆秒/年（$arcsec/yr$）或毫⻆秒/年（$milli-arcsec/yr$）为单位
+⽽径向速度通过多普勒频移来测量，通常以$km/s$为单位</p>
+<h5 id="q4怎样将自行变成和径向速度相同的单位">Q4:怎样将自行变成和径向速度相同的单位？</h5>
+<p>需要通过获得恒星距离$D$来获得切向速度$V_T=\mu D$此时与径向速度量纲一致，假设$D$的单位是$km$ 由于$1\ arcsec=\frac{1}{3600}deg=\frac{2\pi}{360*3600}rad,\ 1yr=3.15\times10^7s$因此只需调整为原本数值的$\frac{2\pi}{360*3600*3.15\times10^7}$ 倍。</p>
+<h4 id="第二章">第二章</h4>
+<h5 id="运用gaia计算恒星距离">运用Gaia计算恒星距离</h5>
+<p>$\epsilon\ CRT$ star (HD 99167)，视差为8.177988986211076$mag$</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plx2d</span>(parallex):
+</span></span><span style="display:flex;"><span>    AU <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.000004848</span>
+</span></span><span style="display:flex;"><span>    PI <span style="color:#f92672">=</span> parallex<span style="color:#f92672">/</span><span style="color:#ae81ff">1000</span><span style="color:#f92672">*</span><span style="color:#ae81ff">0.0000048</span>
+</span></span><span style="display:flex;"><span>    d <span style="color:#f92672">=</span> AU<span style="color:#f92672">/</span>PI
+</span></span><span style="display:flex;"><span>    dly <span style="color:#f92672">=</span> d<span style="color:#f92672">*</span><span style="color:#ae81ff">3.2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> d, dly
+</span></span><span style="display:flex;"><span>parallex <span style="color:#f92672">=</span> <span style="color:#ae81ff">8.177988986211076</span>
+</span></span><span style="display:flex;"><span>d, dly <span style="color:#f92672">=</span> plx2d(parallex)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> pc </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> ly&#34;</span> <span style="color:#f92672">%</span> (d, dly))
+</span></span></code></pre></div><p>output: 123.50224507552687 $pc$ 395.20718424168604 $ly$</p>
+<h4 id="第三章">第三章</h4>
+<h5 id="已知太阳的绝对星等为m_v483求太阳的视星等v段">已知太阳的绝对星等为$M_v=+4.83$，求太阳的视星等(V段)。</h5>
+<p>已知视星等和绝对星等的关系为
+</p>
+$$M_v-m_v=-5log(d)+5$$
+<p>
+将$M_v=+4.83$，日地距离$d=4.8*10^{-6}pc$ 带入得
+</p>
+$$m_v=-26.76$$
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>M_v <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.83</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cal</span>(M_v):
+</span></span><span style="display:flex;"><span>    d <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0000048</span>
+</span></span><span style="display:flex;"><span>    m_v <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>log10(d) <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> M_v
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> m_v
+</span></span><span style="display:flex;"><span>print(cal(M_v))
+</span></span></code></pre></div><p>output:-26.763793813122064</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  De finibus bonorum et malorum 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
