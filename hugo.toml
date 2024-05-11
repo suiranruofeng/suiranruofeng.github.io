@@ -1,7 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'De finibus bonorum et malorum'
-theme = 'ananke'
+theme = 'nostyleplease'
 
 
 [markup]

@@ -22,12 +22,5 @@
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Introduction This is bold text, and this is emphasized text.&#xA;Visit the Hugo website!</description>
     </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/math_examples/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/math_examples/</guid>
-      <description>This is an inline \(a^*=x-b^*\) equation.&#xA;These are block equations:&#xA;\[a^*=x-b^*\] \[ a^*=x-b^* \] \[ a^*=x-b^* \] These are block equations using alternate delimiters:&#xA;$$a^*=x-b^*$$ $$ a^*=x-b^* $$ $$ a^*=x-b^* $$ </description>
-    </item>
   </channel>
 </rss>
