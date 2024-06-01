@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on De finibus bonorum et malorum</title>
+    <link>http://localhost:1313/others/</link>
+    <description>Recent content in Others on De finibus bonorum et malorum</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 May 2024 00:27:33 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit10TextA UCAS_English_Course</title>
+      <link>http://localhost:1313/others/unit10texta-ucas_english_course/</link>
+      <pubDate>Tue, 21 May 2024 00:27:33 +0800</pubDate>
+      <guid>http://localhost:1313/others/unit10texta-ucas_english_course/</guid>
+      <description>Unit 10 The Doctor&amp;rsquo;s Dilemma: ls lt Ever Good to Do Harm? 医生的困境：伤害永远是好事吗？&#xA;First paragraph:&#xA;Medical knowledge changes swiftly, and technological changes make new and expensive investigations and treatments possible that were only theoretical a few years ago. Life has been extended in length, but not in quality, and the debates about end‑of‑life decisions show us how much the notion of a &amp;ldquo;good life&amp;rdquo; is bound up with the absence of disease, illness and suffering.</description>
+    </item>
+  </channel>
+</rss>

@@ -222,4 +222,4 @@ According to Para. 12, what type of medical harm can be acceptable?
 第十二段提到,社会接受医疗可能会带来并非医生本意的蓄意痛苦,说明只要不是医生的主要目的,某些形式的医疗伤害是可以接受的。
 
 
-*made by Gpt*
+*made by GPT*
